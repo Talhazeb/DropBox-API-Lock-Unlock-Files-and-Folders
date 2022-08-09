@@ -45,8 +45,8 @@ namespace DropBox_Lock
             var httpRequest = (HttpWebRequest)WebRequest.Create(url);
             httpRequest.Method = "POST";
             httpRequest.ContentType = "application/x-www-form-urlencoded";
-            httpRequest.Headers["Authorization"] = "Basic MzB6Y203YndibnF1NWZ2OnVydDhmbnZkaHh1ejIzZQ==";
-            var data = "grant_type=refresh_token&refresh_token=GcMD7zIRQ4YAAAAAAAAAAQaaoKWuOuKg0n8EMbGoaZHI8-htKdx6YgHuYFZN4uAe";
+            httpRequest.Headers["Authorization"] = "Basic AuthkeyHERE";
+            var data = "grant_type=refresh_token&refresh_token=RefershTokenhere";
             using (var streamWriter = new StreamWriter(httpRequest.GetRequestStream()))
             {
                 streamWriter.Write(data);
